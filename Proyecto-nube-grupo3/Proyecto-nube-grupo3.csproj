@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Proyecto_nube_grupo3</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\Contacto.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Negotiate" Version="6.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Contacto.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Contacto.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Contacto.cshtml" />
+  </ItemGroup>
+
+</Project>
